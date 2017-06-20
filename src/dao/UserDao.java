@@ -28,8 +28,8 @@ public class UserDao {
 			while(rs.next()){
 				user=new User();
 				user.setId(rs.getInt("id"));
-				user.setName(rs.getString("name"));
-				user.setPassword(rs.getString("password"));
+				user.setName(name);
+				user.setPassword(password);
 			}
 			ps.close();
 			con.close();
